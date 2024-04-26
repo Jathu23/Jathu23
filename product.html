@@ -5,26 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <script src="indcx.js"></script>
+    <script src="D:\wep dev\e-commerce wep\indcx.js"></script>
 
 </head>
 
 <body>
     <header>
-        <div class="header-bar" style="justify-content: space-between;">
+        <div class="header-bar">
             <h1 style="margin-bottom: 10px; margin-top: 10px;">
                 Aj.Market
             </h1>
             <button class="btn-head-icon" onclick="apear()"><i class="fas fa-bars"></i></button>
 
+            <div class="search-bar">
+                <input type="text" onkeyup="check(event)" placeholder="Search in Aj.Market ">
+
+            </div>
 
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -33,7 +34,6 @@
                 <li><a href="about.html">About us</a></li>
             </ul>
         </div>
-
     </header>
     <div class="popup-header">
         <div id="nav-1">
@@ -50,65 +50,141 @@
 
         </div>
     </div>
-    <nav>
-        <div class="category">
-            <ul>
-                <li><a href=""><i class="fas fa-desktop"></i> Electronic Device</a></li>
-                <li><a href=""><i class="fas fa-radiation-alt"></i> Tv/Radio</a></li>
-                <li><a href=""><i class="fas fa-mobile-alt"></i> Mobile Phones</a></li>
-                <li><a href=""><i class="fas fa-laptop"></i> Laptop</a></li>
-                <li><a href=""><i class="fas fa-bicycle"></i> Bike Parts</a></li>
-                <li><a href=""><i class="fas fa-leaf"></i> Vegetable</a></li>
-                <li><a href=""><i class="fas fa-paint-brush"></i> Beauty Products</a></li>
-                <li><a href=""><i class="fas fa-home"></i> Home&Life styles</a></li>
+    <div class="min-searchbar">
+        <input type="text" onkeyup="check(event)" placeholder="Search in Aj.Market ">
 
-            </ul>
-        </div>
-        <div class="nav-images">
+    </div>
+    <div class="smal-searchbar">
+        <input type="text" onkeyup="check(event)" placeholder="Search in Aj.Market ">
 
-            <img src="D:\wep dev\e-commerce wep\images\360_F_387951958_xEBphJiddszfAlcHaxOKdywRUfH2iTnW (1).jpg" alt="">
+    </div>
+    <div class="head">
 
+        <h1>
+            <i class="fas fa-shopping-cart"></i>Products
+        </h1>
 
-        </div>
+    </div>
+    <div class="cart">
+        <button id="btn1">
+            <i class="fas fa-shopping-cart"></i>
 
-
-    </nav>
-    <div class="service">
+        </button>
+        <input type="number" name="" id="" readonly>
+    </div>
+    <div class="popup-cart" id="pop">
         <div>
-            <i class="far fa-smile"></i><br>
-            <p>
-
-                <b>Best price </b><br>
-                refers to the most competitive cost offered for a product or service, considering its
-                quality, features, and market standards.
-            </p>
-        </div>
-        <div>
-            <i class="far fa-smile"></i><br>
-            <p>
-
-                <b>Quality</b><br>
-                Product quality refers to the overall excellence of a product in meeting customer needs and
-                expectations.
-            </p>
-        </div>
-        <div>
-            <i class="far fa-smile"></i><br>
-            <p>
-
-                <b>Delivery </b><br>
-                the process of transporting goods or services from a seller to a buyer. Efficient delivery ensures
-                timely and accurate fulfillment of customer orders, contributing to
-                customer satisfaction.
-            </p>
+            <img src="D:\wep dev\e-commerce wep\images\2022-WS27-Original-Smart-Watch.jpg" alt="">
+            <figcaption>2022 WS27 Orignal Smart watch</figcaption>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
         </div>
     </div>
-    <br>
-    <div class="shoping">
-        <a href="D:\wep dev\e-commerce wep\product.html">Shop now <i class="fas fa-arrow-right"></i></a>
+
+    <div class="category-image">
+
+        <div>
+            <img src="D:\wep dev\e-commerce wep\images\2022-WS27-Original-Smart-Watch.jpg" alt="">
+            <figcaption>2022 WS27 Orignal Smart watch</figcaption>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
+        </div>
+        <div>
+            <img src="D:\wep dev\e-commerce wep\images\Apple-Watch-Ultra-2-Alt-Gear.webp" alt="">
+            <figcaption>Apple watch</figcaption>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
+        </div>
+        <div>
+            <img src="D:\wep dev\e-commerce wep\images\71fJ8PJ8ooL._AC_UL1500_.jpg" alt="">
+            <figcaption class="figcaption">Man stainless steal sport analog</figcaption><br>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
+        </div>
+        <div>
+            <img src="D:\wep dev\e-commerce wep\images\fd-apple-watch-apps-6662.webp" alt="">
+            <figcaption>Man Smart watch</figcaption>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
+        </div>
+        <div>
+            <img src="D:\wep dev\e-commerce wep\images\images (1).jpeg" alt="">
+            <figcaption>G-shock digital watch</figcaption>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
+        </div>
+        <div>
+            <img src="D:\wep dev\e-commerce wep\images\images.jpeg" alt="">
+            <figcaption>SMART LED watch</figcaption>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
+        </div>
+        <div>
+            <img src="D:\wep dev\e-commerce wep\images\MQDY3ref_VW_34FRwatch-49-titanium-ultra_VW_34FR_WF_COwatch-face-49-alpine-ultra_VW_34FR_WF_CO.jpeg"
+                alt="">
+            <figcaption>Apple pro g9 special edition</figcaption>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
+        </div>
+        <div>
+            <img src="D:\wep dev\e-commerce wep\images\s-l1200.webp" alt="">
+            <figcaption>Casual man watch</figcaption>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
+        </div>
+        <div>
+            <img src="D:\wep dev\e-commerce wep\images\download.jpeg" alt="">
+            <figcaption>Product name</figcaption>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
+        </div>
+        <div>
+            <img src="D:\wep dev\e-commerce wep\images\download.jpeg" alt="">
+            <figcaption>Product name</figcaption>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
+        </div>
+        <div>
+            <img src="D:\wep dev\e-commerce wep\images\download.jpeg" alt="">
+            <figcaption>Product name</figcaption>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
+        </div>
+        <div>
+            <img src="D:\wep dev\e-commerce wep\images\download.jpeg" alt="">
+            <figcaption>Product name</figcaption>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
+        </div>
+        <div>
+            <img src="D:\wep dev\e-commerce wep\images\download.jpeg" alt="">
+            <figcaption>Product name</figcaption>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
+        </div>
+        <div>
+            <img src="D:\wep dev\e-commerce wep\images\download.jpeg" alt="">
+            <figcaption>Product name</figcaption>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
+        </div>
+        <div>
+            <img src="D:\wep dev\e-commerce wep\images\download.jpeg" alt="">
+            <figcaption>Product name</figcaption>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
+        </div>
+        <div>
+            <img src="D:\wep dev\e-commerce wep\images\download.jpeg" alt="">
+            <figcaption>Product name</figcaption>
+            <p class="para"><b>RS.3200</b></p>
+            <button class="btn-buy">Add to Cart</button>
+        </div>
+
+
     </div>
-    <br>
-    <hr>
+
+
 
     <footer>
         <div>
@@ -126,7 +202,6 @@
         </div>
 
     </footer>
-
 
 </body>
 
